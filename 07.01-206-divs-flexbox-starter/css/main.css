@@ -107,23 +107,36 @@ body {
   font-size: 20px;
   height: 100%;
 }
-h1, h2 {
+h1, h2, h3, h4 {
 font-family: 'Lora', serif;
-
-
 }
 h1 {
+  font-size: 3em;
+  color: #f16059;
+  margin: 1em 0 0 0;
+}
+h2 {
+  margin: 0 0 1em 0;
+  color: #5e5e5e;
+}
+h3 {
 font-size: 1em;
 font-weight: 700;
 color: #fee17c;
 text-align: center;
 margin: .5em auto 1em .5em;
 }
-h2 {
+h4 {
 font-size: .7em;
 font-weight: 700;
 
 margin: 0 2em 0 1.25em;
+}
+h5 {
+  font-weight: 400;
+  color: #5e5e5e;
+  margin: .5em 25% 1.5em 0;
+
 }
 p {
 font-size: 14px;
@@ -139,6 +152,12 @@ border-bottom:2px solid #fee17c;
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
+}
+
+.opening {
+  flex-flow: column nowrap;
+  border-bottom:4px solid #fee17c;
+  margin-bottom: 2em;
 }
 
 .div-1, .div-2, .div-3 {
