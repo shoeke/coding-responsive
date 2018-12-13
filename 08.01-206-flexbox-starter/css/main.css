@@ -114,6 +114,7 @@ footer {
   background-color: #222;
   height: 80px;
   width: 100%;
+  display: flex;
 }
 
 main {
@@ -126,6 +127,7 @@ header,
 footer,
 main {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+  display: flex;
 }
 
 .wrapper {
@@ -154,6 +156,9 @@ main {
 
 .flex-container {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .flex-items {
@@ -164,6 +169,7 @@ main {
   background-color: #f16059;
   width: 30%;
   height: 200px;
+  display: flex;
 }
 
 /* ==========================================================================
