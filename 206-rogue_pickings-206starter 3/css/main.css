@@ -9,8 +9,6 @@ html {
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
-
-
 }
 
 .container{
@@ -20,7 +18,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+}
+.header-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 h1,
@@ -53,13 +56,14 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	padding: 0 2em 1em 2em;
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
+	padding-bottom: 1em;
 }
 
 h1 {
-	margin: 0;
+	margin: 0 auto;
 	padding: 1em 0 0 0;
 }
 h1 span {
@@ -73,6 +77,8 @@ nav ul {
 	margin: 0;
 	padding: 1em;
 	list-style: none;
+	display: flex;
+	flex-direction: column;
 
 }
 nav ul li {
@@ -182,13 +188,16 @@ footer span {
 
 /* ---------------------------------------------------------------------------------TABLET QUERY----------------------------------*/
 @media only screen and (min-width:768px){
+
+
 .container {
 	padding:  1.5em 3em;
 }
+
 header {
-	width: 90%;
 	margin: auto 0;
 }
+
 .bottom-section {
 	display: flex;
 	flex-flow: row nowrap;
@@ -205,17 +214,44 @@ header {
 	padding: 1.5em;
 	border-top: 1px solid #eee;
 }
+
 .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
+
 footer {
 	width: 100%;
 }
 
 }
+
+
 /*DESKTOP QUERY*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width:1200px){
+
+.header-container {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+header {
+	justify-content: flex-start;
+	width: auto;
+	padding-left: 0;
+	border-bottom: 0px;
+
+}
+nav ul {
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0;
+}
+header h1 {
+	text-align: left;
+}
 
 
 }
