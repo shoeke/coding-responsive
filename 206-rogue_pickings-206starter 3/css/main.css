@@ -9,15 +9,18 @@ html {
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
+
 }
 
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 h1,
@@ -49,36 +52,39 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+	padding: 0 2em 1em 2em;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
+
 }
 
-header h1 {
-	float: left;
+h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 1em 0 0 0;
 }
-header h1 span {
+h1 span {
 	color: #77a466;
 }
 
-header nav {
-	float: right;
-	padding: 46px 0;
+nav {
+
 }
-header nav ul {
+nav ul {
 	margin: 0;
-	padding: 0;
+	padding: 1em;
+	list-style: none;
+
 }
-header nav ul li {
+nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: .875em;
 	padding: 0 10px;
-	display: inline;
+	line-height: 3em;
+	text-align: center;
+
 }
-header nav ul li a{
+nav ul li a{
 	text-decoration: none;
 	color:#77a466;
 }
@@ -88,20 +94,19 @@ header nav ul li a{
 .bottom-section {
 	margin: 0 auto;
 	clear: both;
+
 }
 
 .main-image {
 	height: auto;
-	float: left;
 }
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border: 3px solid #77a466;
 }
 
 .main-title {
 	height: auto;
-	float: left;
 }
 .main-title h3 {
 	text-align: left;
@@ -110,8 +115,8 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1em;
+	line-height: 1.75em;
 }
 
 .section-one,
@@ -119,7 +124,6 @@ header nav ul li a{
 .section-three {
 	width: 33%;
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 }
 
@@ -164,10 +168,26 @@ footer {
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
+
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------TABLET QUERY----------------------------------*/
+@media only screen and (min-width:768px){
+
+
+
+}
+/*DESKTOP QUERY*/
+@media only screen and (min-width: 1200px){
+
+
 }
