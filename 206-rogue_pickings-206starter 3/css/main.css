@@ -33,6 +33,7 @@ h4 {
 }
 h1 {
 	font-size: 1.875em;
+	text-align: center;
 }
 h2 {
     font-size: 1.5em;
@@ -55,7 +56,6 @@ header {
 	padding: 0 2em 1em 2em;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
-
 }
 
 h1 {
@@ -182,8 +182,36 @@ footer span {
 
 /* ---------------------------------------------------------------------------------TABLET QUERY----------------------------------*/
 @media only screen and (min-width:768px){
+.container {
+	padding:  1.5em 3em;
+}
+header {
+	width: 90%;
+	margin: auto 0;
+}
+.bottom-section {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:  center;
+}
 
-
+.section-one,
+.section-two,
+.section-three {
+	background color: yellow;
+	flex-basis: 30%;
+	flex-grow: 1;
+	height: auto;
+	padding: 1.5em;
+	border-top: 1px solid #eee;
+}
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+footer {
+	width: 100%;
+}
 
 }
 /*DESKTOP QUERY*/
