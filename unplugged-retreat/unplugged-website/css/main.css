@@ -97,14 +97,175 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* - - - - - - - SHARED HEADER/FOOTER STYLES - - - - - - - - - */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/* - - - - - - - HEADER STYLES - - - - - - - - - */
+header {
+
+}
+
+.content-wrapper{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap;
+}
+
+.header-divider{
+
+}
+nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-flow: row wrap;
+
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* - - - - - - - MAIN STYLES HOMEPAGE- - - - - - - - - */
+
+main {
+
+}
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description{
+
+}
+
+form{
+
+}
+.features{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 
 
+}
+.feature-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 
 
+}
+.reviews{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 
 
+}
+.lacrue-section{
+
+}
+.lacrue-text{
+
+}
+/* - - - - - - - MAIN STYLES ABOUT PAGE-- - - - - - - - - */
+.mission{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content{
+
+}
+.map{
+
+}
+.contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 
 
+}
+.contact-content{
+
+}
+.gen-info{
+
+}
+.chat{
+
+}
+/* - - - - - - - MAIN STYLES FAQ PAGE-- - - - - - - - - */
+.faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/*not sure if it's .faq-content or faq content-wrapper*/
+.faq .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+
+}
+/* - - - - - - - FOOTER STYLES - - - - - - - - - */
+
+footer{
+
+}
+.footer-content{
+
+}
+.contact{
+
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright{
+
+}
 
 
 
