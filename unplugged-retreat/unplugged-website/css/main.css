@@ -106,38 +106,53 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+.content-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 /* - - - - - - - HEADER STYLES - - - - - - - - - */
 header {
-
+/*padding: 15px 0;*/
 }
 
-.content-wrapper{
+header .content-wrapper{
+/*display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap;*/
+background-color: #000000;
+width: 100%;
+margin: 0;
+padding: 15px 0;
+}
+
+
+.header-divider{
+ width: 60%;
+}
+header nav{
 display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: row wrap;
+width: 60%;
 }
-
-.header-divider{
-
-}
-nav{
-display: flex;
-justify-content: space-around;
-align-items: center;
-flex-flow: row wrap;
-
-}
-nav ul {
+header nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+header nav ul li {
+  border: 1px solid #fff;
 }
 
 /* - - - - - - - MAIN STYLES HOMEPAGE- - - - - - - - - */
 
-main {
-
+main h1{
+  width: 90%;
+  color: #fff;
 }
 .hero-area {
   display: flex;
@@ -145,11 +160,21 @@ main {
   flex-flow: row wrap;
 }
 
+.hero-area .content-wrapper {
+  background-image: url("../img/woman-over-bridge.jpg");
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+  padding: 24px;
+}
+
+
 aside{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 25px 20px 50px 20px;
 }
 
 .form-description{
@@ -163,24 +188,37 @@ form{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  color: #fff;
+  background-color: #000;
+}
 
-
+.features .content-wrapper{
+  width: 83%;
+  padding: 50px 0;
 }
 .feature-items{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 56%;
+}
 
-
+.feature-items figcaption {
+  text-align: center;
 }
 .reviews{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
-
+  background-color: #2a423a;
+  color: #fff;
+  padding: 25px;
 }
+.reviews h3 {
+  width: 50%;
+}
+
 .lacrue-section{
 
 }
@@ -235,33 +273,49 @@ form{
 
 }
 /* - - - - - - - FOOTER STYLES - - - - - - - - - */
+footer {
+  background-color: #202322;
+  color: #fff;
 
-footer{
-
+}
+footer .content-wrapper{
+ width: 60%;
+ margin: 30px 0;
 }
 .footer-content{
-
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+footer p {
+  margin: 0;
 }
 .contact{
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .social{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
+  width: 100%;
 }
 .social-icons{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.social-icons p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.social-icons a {
+  margin: 0 5%;
 }
+
 
 .copyright{
 
