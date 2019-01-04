@@ -96,6 +96,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* - - - - - - - CSS VARIABLES - - - - - - - - - */
+/* testing out with bakkground colors*/
+:root {
+  --color-bg-dark:#2a423a;
+  --color-bg-light: #527158;
+  color: #fff;
+}
 
 /* - - - - - - - SHARED HEADER/FOOTER STYLES - - - - - - - - - */
 
@@ -211,7 +218,7 @@ form{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
+  background-color: var(--color-bg-dark);
   color: #fff;
   padding: 25px;
 }
@@ -231,10 +238,11 @@ form{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: var(--color-bg-light);
 }
 
-.mission-content{
-
+.mission .content-wrapper{
+padding: 30px 20px;
 }
 .map{
 
@@ -244,11 +252,13 @@ form{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
-
+  background-color: var(--color-bg-dark);
+}
+.contact-section .content-wrapper {
+  padding: 30px 20px;
 }
 .contact-content{
-
+  width: 100%;
 }
 .gen-info{
 
@@ -262,6 +272,7 @@ form{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: var(--color-bg-light);
 }
 /*not sure if it's .faq-content or faq content-wrapper*/
 .faq .content-wrapper{
@@ -269,12 +280,12 @@ form{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  padding: 30px 20px;
 
 }
 /* - - - - - - - FOOTER STYLES - - - - - - - - - */
 footer {
-  background-color: #202322;
+  background-color: var(--color-bg-dark);
   color: #fff;
 
 }
